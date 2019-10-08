@@ -1,0 +1,31 @@
+[hotreload]
+  suffixes = [".go"]
+  ignore = []
+
+[app]
+  welfareUrl = "http://www.cwl.gov.cn/cwl_admin/kjxx/findIssue?name=ssq"
+  sportUrl = "http://www.lottery.gov.cn/historykj/history.jspx?_ltype=dlt"
+
+  addr = "172.16.0.17:8080"
+  #单元测试调试信息
+  debug = false
+
+  [app.logger]
+    level = "INFO"
+    name = "application"
+
+#数据库驱动
+[database]
+    dirver = "mysql"
+
+[mysql]
+   datahost = "cdb-mfnhjmvj.gz.tencentcdb.com:10086"
+   databaseName ="lottery"
+   databaseUserName ="root"
+   databasePassword ="haha1234--"
+
+#reids
+[redis]
+  Addr = "127.0.0.1:6379"
+  Password = ""
+  DB = 0
